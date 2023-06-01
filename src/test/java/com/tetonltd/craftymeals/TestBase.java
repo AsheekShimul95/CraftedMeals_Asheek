@@ -13,14 +13,15 @@ public class TestBase {
     public void setUpClass() {
         System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver");
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless");
+        //options.addArguments("--headless");
         driver = new ChromeDriver(options);
+        driver.manage().window().maximize();
     }
 
     @AfterClass
     public void tearDownClass() {
-        if (driver != null) {
-            driver.quit();
-        }
+//        if (driver != null) {
+//            driver.quit();
+//        }
     }
 }

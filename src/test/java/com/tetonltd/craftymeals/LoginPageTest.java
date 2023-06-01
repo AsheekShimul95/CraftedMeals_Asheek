@@ -18,6 +18,18 @@ public class LoginPageTest extends TestBase {
     public void loadPage_Successfully_Loaded_Page_Title() {
         Assert.assertEquals(PAGE_TITLE, driver.getTitle());
     }
+    @Test
+            public void testCodeFromTestCaseStudio(){
+        driver.findElement(By.xpath("//input[@id='floatingInputCustom']"));
+        driver.findElement(By.xpath("//input[@id='floatingPasswordCustom']"));
+        driver.findElement(By.xpath("//button[normalize-space()='Login']"));
+        //String text = driver.findElement(By.xpath("//*[@id=\"root\"]/main/div[2]/section/section/div/div/div/h2")).getText();
+        //Assert.assertTrue(text.contains("Welcome To Crafted Meals"));
+
+    }
+
+
+
 
     @Test
     public void loadPage_Has_Username_Password_Inputs() {
@@ -35,6 +47,8 @@ public class LoginPageTest extends TestBase {
     @Test
     public void loadPage_Has_Login_Button() {
         // find a button with label "Button" and assertNotNull
+        WebElement loginButton = driver.findElement(By.xpath("//*[@id=\"root\"]/div[2]/div/div/form/button[1]"));
+        loginButton.click();
     }
 
     @Test
@@ -48,6 +62,9 @@ public class LoginPageTest extends TestBase {
     @Test
     public void loadPage_Has_Forget_Password_Link() {
         // find an anchor (a) link with label "Forget Password"
+        WebElement forgetPassword = driver.findElement(By.xpath("//*[@id=\"root\"]/div[2]/div/div/form/a"));
+        Assert.assertEquals(FORGET_PASSWORD_TEXT,forgetPassword.getText());
+        forgetPassword.click();
+        Assert.assertEquals(FORGET_PASSWORD_URL, driver.getCurrentUrl());
     }
-
 }
