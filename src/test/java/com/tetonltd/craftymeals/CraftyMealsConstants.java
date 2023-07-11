@@ -48,6 +48,8 @@ public class CraftyMealsConstants {
     public static final String PASSWORD_REQUIRED_XPATH = "//div[contains(text(),'Password is required')]";
 
     public static final String ALREADY_HAVE_ACCOUNT_BUTTON_XPATH = "//button[contains(text(),'Already have an Account?')]";
+
+    //Social Media Page
     public static final String SOCIAL_MEDIA_PAGE_HEADER_XPATH = "//h3[contains(text(),'Social Media Post Generator')]";
     public static final String TARGET_CUSTOMERS_INPUT_XPATH = "//label[contains(text(),'Target Customers')]/following-sibling::input";
     public static final String LOCATION_INPUT_XPATH = "//label[contains(text(),'Location')]/following-sibling::input";
@@ -63,9 +65,24 @@ public class CraftyMealsConstants {
 
     public static final String SOCIAL_MEDIA_POST_URL = CraftyMealsConstants.BASE_URL + "/socialmedia-idea";
 
+    //Client Page
     public static final String CLIENT_PAGE_URL = CraftyMealsConstants.BASE_URL + "/client?page=1";
+    public static final String CLIENT_LINK_XPATH = "//li[2]//a[1]";
+    public static final String CLIENT_LISTING_PAGE_HEADER_XPATH = "//h2[contains(text(),'Client Listing')]";
+    public static final String ADD_CLIENT_BUTTON_XPATH = "//a[normalize-space()='Add Client']";
+    public static final String ADD_CLIENT_PAGE_HEADER_XPATH = "//h2[contains(text(),'Add Client')]";
+    public static final String CLIENT_EXERCISE_DROPDOWN_SELECT_XPATH = "//select[@name='activity']";
+    public static final String CREATE_CLIENT_BUTTON_XPATH = "//button[contains(text(),'CREATE CLIENT')]";
 
-    public static final String CLIENT_PAGE_HEADER_XPATH = "//h2[contains(text(),'Client Listing')]";
+    // Saved Post Page
+    public static final String SAVED_POST_PAGE_URL = CraftyMealsConstants.BASE_URL + "/saved-posts";
+    public static final String SAVED_POST_PAGE_HEADER_XPATH = "//h4[contains(text(),'Saved Posts')]";
+    public static final String GENERATE_NEW_POST_BUTTON_XPATH = "//button[contains(text(),'Generate New Posts')]";
+
+    // Meal Planning Page
+    public static final String MEAL_PLANNING_LINK_XPATH = "//span[normalize-space()='Meal Planning']";
+    public static final String MEAL_PLANNING_PAGE_HEADER_XPATH = "//h3[contains(text(), 'Meal Plan Generator')]";
+    public static final String MEAL_PLANNING_GENERATE_BUTTON_XPATH = "//span[contains(text(),'Generate')]";
 
 
 

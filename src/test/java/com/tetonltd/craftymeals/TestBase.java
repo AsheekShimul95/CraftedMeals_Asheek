@@ -44,7 +44,7 @@ public class TestBase {
     }
 
     protected void loginSuccessful() throws InterruptedException {
-        emailInput.sendKeys("asheekshimul@gmail.com");
+        emailInput.sendKeys("asheekshimul+7@gmail.com");
         passwordInput.sendKeys("12345678");
         loginButton.click();
         Thread.sleep(1000);

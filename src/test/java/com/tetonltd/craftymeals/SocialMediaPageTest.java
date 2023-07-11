@@ -66,17 +66,4 @@ public class SocialMediaPageTest extends TestBase {
         generateButton.click();
         //Assert.assertEquals();
     }
-
-
-//    @Test
-//    public void socialMediaPage_Success() {
-//        targetCustomersInput.sendKeys("Asheek");
-//        locationInput.sendKeys("Shimul");
-//        monthSelect.sendKeys("0469891190");
-//        organizationNameInput.sendKeys("DU");
-//        passwordInput.sendKeys("3456367");
-//        socialMediaInput.sendKeys("abc1@gmail.com");
-//        registerButton.click();
-//        Assert.assertEquals(REGISTRATION_URL, driver.getCurrentUrl());
-//    }
 }
